@@ -1,0 +1,191 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{setspace}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-14pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-0.5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-0.5pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-0.5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\setstretch{1.0}
+\footnotesize{
+% \vspace{10mm}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Marc Valentí}} & Email : \href{mailto:marcv94@gmail.com}{marcv94@gmail.com}\\
+  \href{https://github.com/mvalenti12}{https://github.com/mvalenti12} & Mobile : (+34)-628-377-884 \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+          {Bain \& Company}{Amsterdam, Netherlands}
+          {Senior Associate, Data Science}{March 2020 - Present}
+          \textbf{Tools:} R, Python, SQL, Bash, Shiny, Github, Confluence
+        \begin{itemize}
+          \item{\textbf{Scenario Planning:} Build a sales forecasting tool (Shiny App) to project the Sales of more than 1000 SKUs of a Consumer Product company given different scenarios inputed by the user (local regions facing a second lockdown, new-normal conditions) as a COVID19 response. Build the ETL around third-party data which updated over time. \href{https://hbr.org/2020/11/predicting-consumer-demand-in-an-unpredictable-world}{Link to HBR article.}
+          \item{\textbf{Markdown Optimization:} Determined optimal discount of different SKUs by estimating price elasticity. Build a numerical optimizer that maximized overall revenue (estimated increase of XM\$) given different constraints.
+          \item{\textbf{Location Intelligence:} Delivered multiple geolocation analysis covering competitive landscape on location footprint, as well as attractiveness scores based on external variables. Built Internal Intellectual Property on Location Intelligence.
+          \item{\textbf{Segmentation Automation:} Developed an R Library for segmentation purposes using Latent Class Analysis with a main focus on automation, scalability and reproducibility. Delivered segmentations (with clear Personas) and tagging models for multiple Due Diligences.
+          \item{\textbf{Geospatial Analysis (pro-bono):} 
+          \href{https://www.bain.com/careers/meet-us/campus/aag-hackathon/}{Determined the effectiveness of Protecting Areas of an NGO} by analyzing satellite data from different points of time, allowing a measurement for ROI. Used a matching algorithm and a Diff-In-Diff approach.
+          
+          \end{itemize}
+    \resumeSubheading
+      {King}{Berlin, Germany}
+      {Data Scientist}{June 2017 - Feb 2020}
+     
+      \textbf{Tools:} R, Python, SQL, Bash, Docker, Shiny, Looker, Github, Confluence, Jira
+    \begin{itemize}
+      \item{\textbf{A/B Testing:} Test Design (\textit{Experimental Design, Statistical Power}) and Test Analysis (\textit{Bootstrapping, Hypothesis Testing}), drove decisions and suggested further iterations.}
+      \item{\textbf{Content Optimization:} Shipped several optimizations of the core of the games: Content (Levels). Led the implementation of the technology to be able to test different progressions (sets of levels) and later the optimization of those via simulations. Collaborated with the Physics Department of the University of Barcelona on the model optimization.
+      }
+      \item{\textbf{Player Versus Player:} Researched on Match-Making Algorithms in Casual Gaming. Modelled the impact of randomness in our game. Delivered different suggestions on match-making, simulated how feature design impacted player experience.} 
+      \item{\textbf{Pricing:} Conceptualized, designed, build and ship to production a wide-company used tool that provided bank descriptives, product basked analysis and payer segmentation across all king games. Product used by game teams and Marketing.}
+      \item{\textbf{Predictive Modelling:} Brought to production an End-to-End scalable predictive model at the user level (>800M Obs).}
+      
+      \end{itemize}
+
+    \resumeSubheading
+      {Tous Jewelry}{Barcelona, Spain}
+      {Business Analyst Intern}{Jun 2015 - Nov 2015}
+      \begin{itemize}
+      \item{\textbf{Sales Forecasting:} Built an Forecasting Model for 2016 Sales' Budget based on Area Managers expectations}
+      \end{itemize}
+      
+  \resumeSubHeadingListEnd
+  
+  
+\section{Research Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+      {Universitat Pompeu Fabra}{Barcelona, Spain}
+      {Research Assistant}{Jun 2016 - Nov 2016}
+      \begin{itemize}
+      \item{\textbf{Statistical Inference} to estimate the creation of jobs and the increase in revenue caused by the implementation of a social currency in different regions in Europe (Deliverable 3.4 of the Digipay4Growth Project). Used R and \LaTeX.}
+      \end{itemize}
+
+\resumeItemListEnd
+  
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universitat Politècnica de Catalunya}{Barcelona, Spain}
+      {Master of Science in Statistics and Operations Research (90 ECTS);  Avg. Grade: 7.8}{Sep. 2016 -- Oct. 2018}
+      \vspace{0.2mm}
+      \newline
+      \textit{\verysmall{Note: Coursework done during Sep. 2016 - June 2017 full time, Msc. Thesis written while working full time at King during 2018}}
+      \vspace{0.2mm}
+      
+      \textbf{Thesis: "Kiva.org: Exploring Online Relationships"}, supervised by Dra. Inés Alegre (IESE). Kiva is an online crowdfunding platform for microlending. 
+      \begin{itemize}
+      \item{\textbf{Image Recognition} to extract face expressions from the borrowers images using APIs from Google and Microsoft. Determined how face expressions impacted loan performance using \textit{log-log regression}.}
+      \item{\textbf{Authorship attribution} on the loans descriptions using \textit{SVM} and visualization through non-metric MDS.} \end{itemize}
+    
+      
+  \resumeSubheading
+      {Universitat Pompeu Fabra}{Barcelona, Spain}
+      {Bachelor of Science in Economics (250 ECTS);  Avg Grade: 7.6 (Top 15\%)}{Sep. 2012 -- June 2016}
+      \begin{itemize}
+      \item{\textbf{Erasmus Exchange} at Universität Mannheim from Feb. 2016 to Jun 2016}
+      \item{\textbf{Advanced Quantitative Methods} completed with an average of 9.1/10 (20 credits ECTS)}
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{LANGUAGES}
+    \textbf{Catalan/Spanish:}{ Native}\hspace{22mm}
+    \textbf{English:}{ Fluent (C1 Certificate)}\hspace{22mm}
+    \textbf{German:}{ Intermediate (B1 Certificate)}
+
+}
+\vspace{5mm}
+
+\scriptsize{CV compiled on {\today} for an Analytical Consultant role at Google}
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
