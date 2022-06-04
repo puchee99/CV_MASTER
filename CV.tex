@@ -2,7 +2,7 @@
 % Resume in Latex
 % Author : Sourabh Bajaj
 % License : MIT
-% sRun --> latexmk -xelatex "CV.tex" -pvc
+% sRun --> latexmk -xelatex "CV.tex" -pvc -f --> R always
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -84,98 +84,122 @@
   \textbf{{\Large Arnau Puche}} & Email : \href{mailto:arnaupuchevila@gmail.com}{arnaupuchevila@gmail.com}\\
   \href{https://github.com/puchee99}{https://github.com/puchee99} & Mobile : (+34)-673-821-695 \\
 \end{tabular*}
+% %-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart 
+  \resumeSubheading
+      {Universitat Autònoma Barcelona}{Bellaterra, Spain}
+      {Bacheelors degree of Data Engineering (240 ECTS);  Avg. Grade: 7.13}{Sep. 2018 -- Present}
+
+  \resumeSubheading
+      {Coursera}{}
+      {Data Science}{Sep. 2020 -- Present}
+      \begin{itemize}
+      \item{\textbf{IBM AI Entreprise Workflow (4/6):} connecting business priorities to technical implementations.}
+      \item{\textbf{Neural Networks and Deep Learning:} foundational concept by Andrew Ng.}
+      \end{itemize}
+
+  \resumeSubHeadingListEnd
+
+% %-----------HACKATHONS-----------------
+  \section{Hackathons}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+          {NUWE JOBarcelona 2022 Final (7 h)}{Camp Nou, Barcelona, Spain}
+          {Data (teams of 4) - 1st}{March 2022}
+          \textbf{Tools:} Python, Github \href{https://github.com/puchee99/Final-JOBarcelona-22}{(Repo link)}, Bash, Pytorch, Sckiit-Learn, Streamlit, Pandas, XGBoost
+          
+          \textbf{Challenge:}{ Predict the fair market value of football players.}
+          \begin{itemize}
+            \item{\textbf{Feature Engineering:} Through different techniques and combinations with the columns, we were able to add new variables with a higher correlation.}
+            \end{itemize}
+          \begin{itemize}
+          \item{\textbf{Multivariant Regression:} We use different ML models with Grid Search to find the best parameters. We also tested with neural networks.}
+          \end{itemize}
+
+      \resumeSubheading
+        {NUWE CaixaBank 2022 (14 h)}{online}
+        {Data - }{March 2022}
+        \textbf{Tools:} Python, Github \href{https://github.com/puchee99/CaixaBank_DS}{(Repo link)} , Bash, Pytorch, Sckiit-Learn, Pandas, XGBoost
+
+        \textbf{Challenge:}{ Modeling a predictive algorithm that allows knowing the future dynamics of the market from the historical data of the value of the IBEX35 and some Tweets.}
+  
+        \begin{itemize}
+          \item{\textbf{Sentiment analysis:} Some new columns were added in the market data. One with a median daily tweet sentiment score. Other columns with popularity information in Google Trends.}      
+        \end{itemize}
+        \begin{itemize}
+        \item{\textbf{Time Series Forecasting:} Tested different classification models (up - down) and time series.}      
+        \end{itemize}
+      
+      \resumeSubheading
+        {NUWE JOBarcelona 2022 Classification (1 week)}{online}
+        {Data - Qualified for the final}{April 2022}
+        \textbf{Tools:} Python, Github \href{https://github.com/puchee99/JOBcn-DS-2022}{(Repo link)} , Bash, Pytorch, Sckiit-Learn, Pandas
+        
+        \textbf{Challenge:}{ Classify insects according to the value of different sensors.}
+        \begin{itemize}
+        \item{\textbf{Multivariant Classification:} Neural networks were used.
+      \end{itemize}
+        
+        
+    \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
-\section{Professional Experience}
+\section{Experience}
 \resumeSubHeadingListStart
     \resumeSubheading
-          {Bain \& Company}{Amsterdam, Netherlands}
-          {Senior Associate, Data Science}{March 2020 - Present}
-          \textbf{Tools:} R, Python, SQL, Bash, Shiny, Github, Confluence
-        \begin{itemize}
-          \item{\textbf{Scenario Planning:} Build a sales forecasting tool (Shiny App) to project the Sales of more than 1000 SKUs of a Consumer Product company given different scenarios inputed by the user (local regions facing a second lockdown, new-normal conditions) as a COVID19 response. Build the ETL around third-party data which updated over time. \href{https://hbr.org/2020/11/predicting-consumer-demand-in-an-unpredictable-world}{Link to HBR article.}
-          \item{\textbf{Markdown Optimization:} Determined optimal discount of different SKUs by estimating price elasticity. Build a numerical optimizer that maximized overall revenue (estimated increase of XM\$) given different constraints.
-          \item{\textbf{Location Intelligence:} Delivered multiple geolocation analysis covering competitive landscape on location footprint, as well as attractiveness scores based on external variables. Built Internal Intellectual Property on Location Intelligence.
-          \item{\textbf{Segmentation Automation:} Developed an R Library for segmentation purposes using Latent Class Analysis with a main focus on automation, scalability and reproducibility. Delivered segmentations (with clear Personas) and tagging models for multiple Due Diligences.
-          \item{\textbf{Geospatial Analysis (pro-bono):} 
-          \href{https://www.bain.com/careers/meet-us/campus/aag-hackathon/}{Determined the effectiveness of Protecting Areas of an NGO} by analyzing satellite data from different points of time, allowing a measurement for ROI. Used a matching algorithm and a Diff-In-Diff approach.
+          {UAB}{Bellaterra, Spain}
+          {Research Assistant}{Sept 2021 - Feb 2022}
+          \textbf{Tools:} Python, SQL, Bash
+          \begin{itemize}
+          \item{\textbf{Database:} Create a SQL database from biomedical device data.
           
           \end{itemize}
     \resumeSubheading
-      {King}{Berlin, Germany}
-      {Data Scientist}{June 2017 - Feb 2020}
+      {UVE Solutions}{Manresa, Spain}
+      {Intern Data Scientist}{Feb 2021 - July 2021}
      
-      \textbf{Tools:} R, Python, SQL, Bash, Docker, Shiny, Looker, Github, Confluence, Jira
-    \begin{itemize}
-      \item{\textbf{A/B Testing:} Test Design (\textit{Experimental Design, Statistical Power}) and Test Analysis (\textit{Bootstrapping, Hypothesis Testing}), drove decisions and suggested further iterations.}
-      \item{\textbf{Content Optimization:} Shipped several optimizations of the core of the games: Content (Levels). Led the implementation of the technology to be able to test different progressions (sets of levels) and later the optimization of those via simulations. Collaborated with the Physics Department of the University of Barcelona on the model optimization.
+      \textbf{Tools:} Python, SQL, Bash, Streamlit, Pandas, Bitbucket, Confluence, Jira
+      \begin{itemize}
+      \item{\textbf{Data ingestion:} Build a data ingestion tool (Streamlit App) to perform ETL on different data formats. ML techniques were used to calculate similarity between words.}
+      \item{\textbf{BI:} Analyze the distribution of the hostelry sector in the Spanish territory.
       }
-      \item{\textbf{Player Versus Player:} Researched on Match-Making Algorithms in Casual Gaming. Modelled the impact of randomness in our game. Delivered different suggestions on match-making, simulated how feature design impacted player experience.} 
-      \item{\textbf{Pricing:} Conceptualized, designed, build and ship to production a wide-company used tool that provided bank descriptives, product basked analysis and payer segmentation across all king games. Product used by game teams and Marketing.}
-      \item{\textbf{Predictive Modelling:} Brought to production an End-to-End scalable predictive model at the user level (>800M Obs).}
       
-      \end{itemize}
-
-    \resumeSubheading
-      {Tous Jewelry}{Barcelona, Spain}
-      {Business Analyst Intern}{Jun 2015 - Nov 2015}
-      \begin{itemize}
-      \item{\textbf{Sales Forecasting:} Built an Forecasting Model for 2016 Sales' Budget based on Area Managers expectations}
       \end{itemize}
       
   \resumeSubHeadingListEnd
-  
-  
+
+% %-----------PROJECTS----------------- https://github.com/puchee99/we-CAN 
+% \section{Projects}
+% \resumeSubHeadingListStart
+% \resumeSubheading
+%       \item{\textbf{Tools:} Python, SQL, Bash}
+%       \item{\textbf{Challenge:}{ \href{https://github.com/puchee99/JOBcn-DS-2022}{\textbf{collect, save, clean and analyze} data to make good investments.} 
+%       }
+
+% \resumeItemListEnd
+
+% %--------PROGRAMMING SKILLS------------
 \section{Projects}
-\resumeSubHeadingListStart
-\resumeSubheading
-      {Universitat Pompeu Fabra}{Barcelona, Spain}
-      {Research Assistant}{Jun 2016 - Nov 2016}
-      \begin{itemize}
-      \item{\textbf{Statistical Inference} to estimate the creation of jobs and the increase in revenue caused by the implementation of a social currency in different regions in Europe (Deliverable 3.4 of the Digipay4Growth Project). Used R and \LaTeX.}
-      \end{itemize}
+ \resumeSubHeadingListStart
+    \item{\textbf{Flask App}{: create a functional app with different databases in the cloud. \href{https://github.com/puchee99/Flask-App}{(Github link)} }
+    }
+    %\item{\textbf{Airflow}{: test functionalities to collect economic data. \href{https://github.com/puchee99/META-AIRFLOW}{(Github link)} }
+    %}
+ \resumeSubHeadingListEnd
 
-\section{Hackathons}
-\resumeSubHeadingListStart
-\resumeSubheading
-      {NUWE JOBarcelona 2022 Classification}{Barcelona, Spain}
-      \begin{itemize}
-      \item{\textbf{Statistical Inference} to estimate the creation of jobs and the increase in revenue caused by the implementation of a social currency in different regions in Europe (Deliverable 3.4 of the Digipay4Growth Project). Used R and \LaTeX.}
-      \end{itemize}
-\resumeSubheading
-      {NUWE CaixaBank 2022}{Barcelona, Spain}
-      \begin{itemize}
-      \item{\textbf{Statistical Inference} to estimate the creation of jobs and the increase in revenue caused by the implementation of a social currency in different regions in Europe (Deliverable 3.4 of the Digipay4Growth Project). Used R and \LaTeX.}
-      \end{itemize}
-\resumeSubheading
-      {NUWE JOBarcelona 2022 Final}{Barcelona, Spain}
-      \begin{itemize}
-      \item{\textbf{Statistical Inference} to estimate the creation of jobs and the increase in revenue caused by the implementation of a social currency in different regions in Europe (Deliverable 3.4 of the Digipay4Growth Project). Used R and \LaTeX.}
-      \end{itemize}
-
-\resumeItemListEnd
-  
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Universitat Autònoma Barcelona}{Barcelona, Spain}
-      {Bacheelors degree of Data Engineering (240 ECTS);  Avg. Grade: 7.13}{Sep. 2018 -- Present}
-
-       
-  \resumeSubheading
-      {Coursera}{Barcelona, Spain}
-      {Bachelor of Science in Economics (250 ECTS);  Avg Grade: 7.6 (Top 15\%)}{Sep. 2012 -- June 2016}
-      \begin{itemize}
-      \item{\textbf{Erasmus Exchange} at Universität Mannheim from Feb. 2016 to Jun 2016}
-      \item{\textbf{Advanced Quantitative Methods} completed with an average of 9.1/10 (20 credits ECTS)}
-      \end{itemize}
-  \resumeSubHeadingListEnd
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{\textbf{Languages}{:  Python, Javascript, HTML, SQL, R, Bash, C}
+    }
+    \item{\textbf{Technologies}{: GCP, Docker, Tableau, AWS, Airflow, MongoDB, Pyspark, Flask}
+    }
+ \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
+
+% %-----------LANGUAGES-----------------
 \section{LANGUAGES}
     \textbf{Catalan:}{ Native}\hspace{22mm}
     \textbf{Spanish:}{ Native}\hspace{22mm}
@@ -184,17 +208,7 @@
 }
 \vspace{5mm}
 
-\scriptsize{CV compiled on {\today} for an Analytical Consultant role at Google}
-%
-%--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\scriptsize{CV compiled on {\today} for an X role at Google}
 
 
 %-------------------------------------------
