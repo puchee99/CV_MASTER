@@ -119,7 +119,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmsy9.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri9.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 OUTPUT CV.xdv
 INPUT CV.aux
 INPUT ./CV.out

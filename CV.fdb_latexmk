@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1654305031 "CV.xdv" "CV.pdf" "CV" 1654305607
-  "CV.xdv" 1654305031 8012 eb0802a84b3ff3556e257b533d318d6d "xelatex"
+["xdvipdfmx"] 1654306207 "CV.xdv" "CV.pdf" "CV" 1654306207
+  "CV.xdv" 1654306207 7908 d4aff0a06b75ababb60fe18773697b65 "xelatex"
   (generated)
   "CV.pdf"
-["xelatex"] 1654305028 "CV.tex" "CV.xdv" "CV" 1654305607
+["xelatex"] 1654306205 "CV.tex" "CV.xdv" "CV" 1654306207
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -19,7 +19,6 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx9.tfm" 1254269338 12080 8da3d5e88196e4de175949ad7749b42f ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm" 1254269338 11276 116dd5bea6621ce4a1999f96d876084c ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm" 1254269338 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
-  "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm" 1254269338 12064 a35db870f0b76c338d749c56dc030ef5 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm" 1254269338 12084 b7f5e4c003de6f57f07c7e9fee73a37c ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm" 1254269338 17148 9556e1b5f936b77a796f68d2d559ba99 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri9.tfm" 1254269338 17148 ca1ae65757b004f470b8cd636199f6fc ""
@@ -71,11 +70,11 @@
   "/usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf" 1557092114 35484 cb1661360667bf4db662a8895053b554 ""
   "/usr/local/texlive/2019/texmf-var/web2c/xetex/xelatex.fmt" 1564590721 3751080 a473629c8ed00023ef97256a97e1c818 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "CV.aux" 1654305031 1296 52f5c310b5b6188646cf0f01f33b87ce "xelatex"
-  "CV.out" 1654305031 277 960d51872b7eb11f631386df9ed351e4 "xelatex"
-  "CV.tex" 1654305028 7675 e93f8027ab063f74dfb579b31c7607ce ""
+  "CV.aux" 1654306207 1296 52f5c310b5b6188646cf0f01f33b87ce "xelatex"
+  "CV.out" 1654306207 277 960d51872b7eb11f631386df9ed351e4 "xelatex"
+  "CV.tex" 1654306204 7692 c55277561bb44b77c7b58213787cc431 ""
   (generated)
-  "CV.aux"
-  "CV.out"
-  "CV.log"
   "CV.xdv"
+  "CV.aux"
+  "CV.log"
+  "CV.out"
