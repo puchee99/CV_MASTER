@@ -27,7 +27,7 @@ The main XeLaTeX source file is `CV.tex`; the compiled document is `CV.pdf`.
 Instructions for compiling the document (TeX &rarr;(XeLaTeX)&rarr; PDF):
 
 - **Method 1:** Use `latexmk` for fully automated document generation:
-	- `latexmk -xelatex "CV.tex"`
+	- `latexmk -xelatex "CV.tex" -pvc -f"`
 	(add the `-pvc` switch to automatically recompile on changes)
 
 - **Method 2:** Use `XeLaTeX` directly:
