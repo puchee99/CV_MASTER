@@ -2,14 +2,12 @@
 % Resume in Latex
 % Author : Sourabh Bajaj
 % License : MIT
-% sRun --> latexmk -xelatex "CV.tex" -pvc -f --> R always
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -32,25 +30,30 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-14pt}\scshape\raggedright\large
+  \vspace{-12pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-0.5pt}}
+    \textbf{#1}{: #2 \vspace{-1.5pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBold}[1]{
+  \item\small{
+    #1 \vspace{-1.5pt}
   }
 }
 
@@ -59,11 +62,10 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-0.5pt}
+    \end{tabular*}\vspace{-1.5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
-
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -74,200 +76,114 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 \setstretch{1.0}
 \footnotesize{
-% \vspace{10mm}
+
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Arnau Puche}} & Email : \href{mailto:arnaupuchevila@gmail.com}{arnaupuchevila@gmail.com}\\
-  \href{https://github.com/puchee99}{https://github.com/puchee99} & Mobile : (+34)-673-821-695 \\
-  \href{https://es.linkedin.com/in/arnau-puche-vila}{linkedin/arnau-puche-vila}
-\end{tabular*}
-% %-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart 
-  \resumeSubheading
-      {Universitat Autònoma de Barcelona}{Bellaterra, Spain}
-      {Bachelor's degree of Data Engineering (240 ECTS)}{Sep. 2018 -- 2023}
-      \begin{itemize}
-        \item{\textbf{TFG:} market analysis using AI algorithms to identify patterns and trends that optimize financial decision-making.}
-        \end{itemize}
-  \resumeSubheading
-      {Coursera}{}
-      {Data Science}{Sep. 2020 -- Feb. 2022}
-      \begin{itemize}
-      \item{\textbf{IBM AI Entreprise Workflow:} connecting business priorities to technical implementations.}
-      \item{\textbf{Neural Networks and Deep Learning:} foundational concept by Andrew Ng.}
-      \item{\textbf{Fraud Detection on Financial Transactions with ML on GCP:} BigQuery and VertexAI for banking industry.}
-      \end{itemize}
+\begin{center}
+    {\Huge \textbf{Arnau Puche}} \\ \vspace{6pt}
+    \large AI \& Data Engineer \\ \vspace{3pt}
+    \footnotesize
+    \href{mailto:arnaupuchevila@gmail.com}{arnaupuchevila@gmail.com} $|$ 
+    (+34)-673-821-695 $|$ 
+    \href{https://es.linkedin.com/in/arnau-puche-vila}{linkedin.com/in/arnau-puche-vila} $|$ 
+    \href{https://github.com/puchee99}{github.com/puchee99}
+\end{center}
+\vspace{-10pt}
 
-  \resumeSubheading
-      {DeepLearning.AI}{}
-      {Data Science}{April. 2023 -- Sep. 2023}
-      \begin{itemize}
-      \item{\textbf{ChatGPT Prompt Engineering for Developers:} how to use a large language model (LLM) to quickly build new and powerful applications.}
-      \end{itemize}
+%-----------SUMMARY-----------------
+\section{Summary}
+AI and Data Engineer with 4+ years of experience designing scalable data architectures, implementing end-to-end Machine Learning pipelines, and developing production-grade LLM applications. Proven track record of automating operational workflows and delivering high-value data capabilities across enterprises, startups, and consulting assignments.
 
-  \resumeSubheading
-      {Self-Learning}{}
-      {Azure, AI, JavaScript, Kubernetes, FastAPI}{Ongoing}
-      \begin{itemize}
-      \item{Exploring Azure services, AI algorithms, JavaScript frameworks, Kubernetes orchestration, and FastAPI for efficient web development.}
-      \end{itemize}
-
-  \resumeSubHeadingListEnd
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+    \resumeItem{Languages}{Python, SQL, JavaScript, HTML, R, Bash, Scala, C}
+    \resumeItem{Data \& AI/ML}{dbt, Snowflake, PyTorch, Pandas, Scikit-Learn, XGBoost, Vector DBs, RAG, Agents}
+    \resumeItem{Cloud \& Infra}{AWS, Azure, GCP, Docker, Kubernetes, FastAPI, Airflow}
+    \resumeItem{BI \& Tools}{Power BI, Tableau, ElasticSearch, GitLab, GitHub Actions}
+ \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
 \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Puig}{Barcelona, Spain}
+        {Data \& AI Engineer}{Feb 2025 - Mar 2026}
+        \resumeItemListStart
+        \item{Engineered scalable cloud data pipelines processing large enterprise datasets using \textbf{dbt, Snowflake, and AWS}, reducing robust data ingestion latency by over 30\%.}
+        \item{Integrated production-ready \textbf{Generative AI and LLMs} using RAG and advanced prompt pipelines, automating complex analytical workflows and increasing team efficiency.}
+        \item{Designed automated high-level \textbf{Power BI dashboards} to standardize financial and sales reporting across 3 strategic business units, accelerating executive decision-making.}
+        \resumeItemListEnd
+
     \resumeSubheading
         {Aithos Consulting Group}{Barcelona, Spain}
-        {CEO and Developer}{July 2023 - Present}
-
-        \textbf{Tools:} Python, JavaScript, Azure, Power BI, GitLab, FastAPI, Sharepoint
-        \begin{itemize}
-        \item{\textbf{Indra:} Developed and implemented internal management software to streamline operations.}
-        \item{\textbf{NUWE:} Created and managed hackathons, facilitating innovation and skill development.}
-        \item{\textbf{PYMEC:} Automated reporting processes using Azure, Power BI, and GPT API, improving efficiency and accuracy in data analysis.}
-        \item{\textbf{Private Company:} Developed a trading bot for Interactive Brokers to automate trading strategies.}
-        \item{\textbf{Leadership:} Led the company, overseeing project execution, business development, and client relations.}
-        \item{\textbf{Full-Stack Development:} Developed scalable web applications and APIs using FastAPI and JavaScript frameworks.}
-    \end{itemize}
+        {Founder \& AI/Data Engineer}{July 2023 - Present}
+        \resumeItemListStart
+        \item{Delivered end-to-end data and web applications (FastAPI, React, Azure) for 5+ enterprise clients.}
+        \item{Built an automated reporting pipeline for PYMEC leveraging \textbf{Azure and OpenAI's GPT models (RAG with embedded data)}, saving over 15 hours per week of manual reporting.}
+        \item{Developed internal CRM and centralized tracking software for Indra, unifying cross-functional workflows and reducing reporting errors by 25\%.}
+        \item{Automated algorithmic trading strategies integrating the Interactive Brokers API, optimizing execution logic and reducing order slippage.}
+        \item{Hosted and managed large-scale corporate data hackathons (NUWE) standardizing tech talent acquisition.}
+        \resumeItemListEnd
 
     \resumeSubheading
           {CaixaBank Tech}{Barcelona, Spain}
-          {Data Scientist - ML Engineer}{August 2022 - July 2023}
-
-          \textbf{Tools:} Python, SQL, Bash, Elastic, Gitlab, 
-          \begin{itemize}
-          \item{\textbf{Anomaly Detection:} Detect anomalies in the failures of the entire infrastructure through different AI models.}
-          \item{\textbf{Clustering:} categorize errors using advanced clustering techniques to obtain more information.}
-          \item{\textbf{Forecasting:} prediction of different KPI.}
-          \item{\textbf{ElasticSearch:} create and modify indexes.}
-          \item{\textbf{XAI:} express why an AI system reached a particular decision, recommendation, or prediction.}
-          \item{\textbf{ML Engineer:} design self-running software to automate predictive models.}
-    \end{itemize}
-
-    \resumeSubheading
-          {UAB}{Bellaterra, Spain}
-          {Research Assistant}{Sept 2021 - Feb 2022}
-          \textbf{Tools:} Python, SQL, Bash
-          \begin{itemize}
-          \item{\textbf{Database:} Create a SQL database from biomedical device data.}
+          {Data Scientist \& ML Engineer}{August 2022 - July 2023}
+          \resumeItemListStart
+          \item{Deployed unsupervised clustering models to categorize anomalies across infrastructure failures, processing and classifying millions of daily log events using \textbf{ElasticSearch} and \textbf{Python}.}
+          \item{Built an automated ML forecasting system to predict critical business KPIs, deploying models as scalable self-running microservices.}
+          \item{Implemented Explainable AI (XAI) frameworks (SHAP) to interpret black-box predictive models, establishing transparency and regulatory compliance across banking pipelines.}
+          \resumeItemListEnd
           
-          \end{itemize}
     \resumeSubheading
       {UVE Solutions}{Manresa, Spain}
-      {Intern Data Scientist}{Feb 2021 - July 2021}
-     
-      \textbf{Tools:} Python, SQL, Bash, Streamlit, Pandas, Bitbucket, Confluence, Jira
-      \begin{itemize}
-      \item{\textbf{Data ingestion:} Build a data ingestion tool (Streamlit App) to perform ETL on different data formats. ML techniques were used to calculate similarity between words.}
-      \item{\textbf{BI:} Analyze the distribution of the hostelry sector in the Spanish territory.
-      }
-      
-      \end{itemize}
-      
-  \resumeSubHeadingListEnd
+      {Data Engineering/Science Intern}{Feb 2021 - July 2021}
+      \resumeItemListStart
+      \item{Built an interactive data ingestion system (Streamlit) executing robust ETL on disparate operational data formats.}
+      \item{Applied NLP algorithms to calculate word similarity and normalize textual features across thousands of client telemetry records.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 % %-----------HACKATHONS-----------------
-  \section{Hackathons}
-  \resumeSubHeadingListStart
+\section{Selected Hackathons (Data Science \& AI)}
+\resumeSubHeadingListStart
       \resumeSubheading
-          {NUWE JOBarcelona 2022 Final (7 h)}{Camp Nou, Barcelona, Spain}
-          {Data (teams of 4) - 1st}{May 2022}
-          \textbf{Tools:} Python, Github \href{https://github.com/puchee99/Final-JOBarcelona-22}{\textbf{(Repo link)}}, Bash, Pytorch, Sckiit-Learn, Streamlit, Pandas, XGBoost
-          
-          \textbf{Challenge:}{ Predict the fair market value of football players.}
-          \begin{itemize}
-            \item{\textbf{Feature Engineering:} Through different techniques and combinations with the columns, we were able to add new variables with a higher correlation.}
-            \end{itemize}
-          \begin{itemize}
-          \item{\textbf{Multivariant Regression:} We use different ML models with Grid Search to find the best parameters. We also tested with neural networks.}
-          \end{itemize}
+          {NUWE Competitions (JOBarcelona \& Talent Squad)}{National \& Online}
+          {Various Top Ranks and Finalist Positions}{2022}
+          \resumeItemListStart
+          \item{Achieved \textbf{1st place} in JOBarcelona (Camp Nou) and Talent Squad predicting market values and interpreting SpaceX telemetry respectively.}
+          \item{Leveraged \textbf{Neural Networks, XGBoost, Scikit-Learn, and PyTorch} to implement multi-variant classification and time-series forecasting models under strict 12 to 24-hour deadlines.}
+          \resumeItemListEnd
+\resumeSubHeadingListEnd
 
-      \resumeSubheading
-        {NUWE CaixaBank 2022 (14 h)}{online}
-        {Data - }{May 2022}
-        \textbf{Tools:} Python, Github \href{https://github.com/puchee99/CaixaBank_DS}{\textbf{(Repo link)}} , Bash, Pytorch, Sckiit-Learn, Pandas, XGBoost
+% %-----------EDUCATION-----------------
+\section{Education \& Certifications}
+  \resumeSubHeadingListStart 
+  \resumeSubheading
+      {Universitat Autònoma de Barcelona}{Bellaterra, Spain}
+      {Bachelor's degree in Data Engineering (240 ECTS)}{Sep 2018 - 2023}
+      \resumeItemListStart
+        \item{TFG (Thesis): Market analysis using AI classifiers to identify patterns optimizing financial decision-making.}
+      \resumeItemListEnd
 
-        \textbf{Challenge:}{ Modeling a predictive algorithm that allows knowing the future dynamics of the market from the historical data of the value of the IBEX35 and some Tweets.}
+  \resumeSubheading
+      {DeepLearning.AI \& Coursera}{Online}
+      {AI \& Data Science Specializations}{2020 - 2023}
+      \resumeItemListStart
+      \item{DeepLearning.AI: ChatGPT Prompt Engineering for Developers.}
+      \item{IBM AI Enterprise Workflow: Connecting business priorities to technical ML implementations.}
+      \item{Machine Learning/Deep Learning by Andrew Ng; Fraud Detection with ML on GCP.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
   
-        \begin{itemize}
-          \item{\textbf{Sentiment analysis:} Some new columns were added in the market data. One was made by tweet's daily sentiment score. Other columns with popularity information from Google Trends.}      
-        \end{itemize}
-        \begin{itemize}
-        \item{\textbf{Time Series Forecasting:} Tested different Time Series and Classification models (up - down) .
-        }      
-        \end{itemize}
-      \resumeSubheading
-        {NUWE Talent Squad 2022 (1 week)}{online}
-        {Data - 1st}{July 2022}
-        \textbf{Tools:} Python, Github \href{https://github.com/puchee99/TalentSquad22}{\textbf{(Repo link)}} , Bash, Pytorch, Sckiit-Learn, Pandas
-        
-        \textbf{Challenge:}{ The dataset was data created by sensors from the company SpaceX. The goal was to classify the data into 5 types of weather conditions in order to manage the flight.}
-        \begin{itemize}
-        \item{\textbf{Multivariant Classification:} Neural networks were used.}
-      \end{itemize}
-
-      \resumeSubheading
-        {NUWE JOBarcelona 2022 Classification (1 week)}{online}
-        {Data - Qualified for the final}{April 2022}
-        \textbf{Tools:} Python, Github \href{https://github.com/puchee99/JOBcn-DS-2022}{\textbf{(Repo link)}} , Bash, Pytorch, Sckiit-Learn, Pandas
-        
-        \textbf{Challenge:}{ Classify insects according to the value of different sensors.}
-        \begin{itemize}
-        \item{\textbf{Multivariant Classification:} Neural networks were used.}
-      \end{itemize}
-        
-        
-    \resumeSubHeadingListEnd
-
-
-% %-----------PROJECTS----------------- https://github.com/puchee99/we-CAN 
-% \section{Projects}
-% \resumeSubHeadingListStart
-% \resumeSubheading
-%       \item{\textbf{Tools:} Python, SQL, Bash}
-%       \item{\textbf{Challenge:}{ \href{https://github.com/puchee99/JOBcn-DS-2022}{\textbf{collect, save, clean and analyze} data to make good investments.} 
-%       }
-
-% \resumeItemListEnd
-
-% %--------PROGRAMMING SKILLS------------
-%\section{Projects}
- %\resumeSubHeadingListStart
-  %  \item{\textbf{Flask App}{: create a functional app with different databases in the cloud. \href{https://github.com/puchee99/Flask-App}{(Github link)} }
-   % }
-    %\item{\textbf{Airflow}{: test functionalities to collect economic data. \href{https://github.com/puchee99/META-AIRFLOW}{(Github link)} }
-    %}
- %\resumeSubHeadingListEnd
-
-\section{Programming Skills}
- \resumeSubHeadingListStart
-    \item{\textbf{Languages}{:  Python, Javascript, HTML, SQL, R, Bash, C, Scala}
-    }
-    \item{\textbf{Technologies}{: GCP, Docker, Tableau, AWS, Airflow, MongoDB, Spark, Microsoft tools, GraphQL}
-    }
-    %\item{\textbf{Libraries}{: Pandas, Numpy, Flask, PySpark, Pytorch, Tensorflow, Plotly, Scikit Learn, Streamlit, Shap, Matplotlib, Request, Pymongo, Logging}
-    %}
- \resumeSubHeadingListEnd
-
-
-
-% %-----------LANGUAGES-----------------
-\section{LANGUAGES}
-    \textbf{Catalan:}{ Native}\hspace{22mm}
-    \textbf{Spanish:}{ Native}\hspace{22mm}
-    \textbf{English:}{ Professional (B2 Certificate)}
+\vspace{2mm}
+\center{\textbf{Languages:} English (Professional - B2), Spanish (Native), Catalan (Native)}
 
 }
-\vspace{5mm}
-
-% \scriptsize{CV compiled on {\today} for an X role at Google}
-
 
 %-------------------------------------------
 \end{document}
